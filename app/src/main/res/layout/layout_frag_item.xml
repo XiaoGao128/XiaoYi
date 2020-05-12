@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ddebec"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/item_head"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/unuser"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                ></ImageView>
+            <EditText
+                android:layout_weight="3"
+                android:id="@+id/mian_et_search"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/edittext_selected"
+                ></EditText>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/mian_btn_search"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/riple_btn_pink"
+                android:text="搜索"></Button>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ddebec"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/main_tv_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="全部分类"></TextView>
+
+                <Button
+                    android:id="@+id/btn_book"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#00221122"
+                    android:text="资料/课本"
+                    android:textColor="#23665C"
+                    android:textSize="15dp"></Button>
+
+                <RadioGroup
+                    android:id="@+id/main_rd_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="学习用品"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="衣物"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="箱包"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="数码"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="化妆品"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="手表"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="游戏"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="乐器"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="休闲"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:text="其他"
+                        android:textColor="#B3221122"
+                        android:textSize="15dp"></RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFFFF">
+
+            <FrameLayout
+                android:id="@+id/main_frag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/main_btn_float"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="470dp"
+                    android:layout_marginRight="30dp"
+                    app:backgroundTint="#ADD0D3"
+                    android:background="#ddebec"
+                    android:src="@drawable/plus_no_wit" />
+            </FrameLayout>
+
+            <ProgressBar
+                android:id="@+id/main_show_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"></ProgressBar>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

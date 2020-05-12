@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_social_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:scaleType="center"
+            android:src="@drawable/unuser"></ImageView>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/social_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="18软工小高"
+                android:textColor="#CC0A090A"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/social_tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="2020-4-2"
+                android:textColor="#CC0A090A"
+                android:textSize="12dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/social_im_good"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/dz_gray"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                android:textColor="#CC0A090A"></ImageView>
+                <TextView
+                    android:id="@+id/social_tv_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="100"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"
+                    ></TextView>
+            <ImageView
+                android:id="@+id/social_im_cm"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/pl_gray"
+                android:textColor="#CC0A090A"></ImageView>
+            <TextView
+                android:id="@+id/social_tv_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="100"
+                android:layout_marginLeft="8dp"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                ></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/social_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="劳力士便宜卖了！！！"
+            android:textColor="#CC221122"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:id="@+id/social_describ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineHeight="25dp"
+            android:lines="3"
+            android:padding="10dp"
+            android:text="我想卖一只劳力士，它太便宜了，不符合我现在的身份，8成新，两千五出了，想要的私聊，可刀，这里是链接，非常感谢这个平台让我有了卖出我的劳力士的机会，大恩没齿，永世难忘。"
+            android:textSize="12dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/social_img_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"></ImageView>
+
+            <ImageView
+                android:id="@+id/social_img_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"></ImageView>
+
+            <ImageView
+                android:id="@+id/social_img_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#66221122"></View>
+</LinearLayout>

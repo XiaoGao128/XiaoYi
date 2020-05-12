@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.xiaoyi_test_2">
+    <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
+    <meta-data
+        android:name="Mob-AppKey"
+        android:value="2e2d09072305e" />
+    <meta-data
+        android:name="Mob-AppSecret"
+        android:value="3b2ab37a0d37267daa03a27cbfde3918" /> <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 可选权限说明 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许应用程序联网（必须） -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许访问WiFi网络状态信息（必须） -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许读取手机状态（必须） -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许访问网络状态（必须） -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许写手机存储（必须） -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- GUI自动填充验证码功能（非必须） -->
+    <uses-permission android:name="android.permission.READ_SMS" /> <!-- 从短信中读取验证码接口（非必须） -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 相册 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="校易"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.CompDetailActivity"></activity>
+        <activity android:name=".Activity.AddSocialActivity" />
+        <activity android:name=".Activity.ADActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MessageActivity" />
+        <activity android:name=".Activity.ShowDetailActivity" />
+        <activity android:name=".Activity.AddActivity" />
+        <activity android:name=".Activity.AddTypeActivity" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activity.MainActivity" />
+
+        <service android:name=".Service.MyService"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.xiaoyi_test_2.BmobContentProvider" />
+    </application>
+
+</manifest>

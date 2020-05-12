@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#80DDEBEC"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ddebec"
+        android:gravity="center"
+        android:orientation="horizontal">
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/sor"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            >-->
+<!--            -->
+<!--        </ImageView>-->
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="联系人"
+            android:height="35dp"
+            android:textSize="13dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/riple_btn_pink"
+            android:layout_weight="1"
+            ></Button>
+        <EditText
+            android:id="@+id/mian_et_search"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:background="@drawable/edittext_selected"></EditText>
+
+        <Button
+            android:id="@+id/mian_btn_search"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/riple_btn_pink"
+            android:text="搜索"></Button>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msg_recy"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

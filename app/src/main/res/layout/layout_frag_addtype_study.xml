@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="left"
+    android:padding="30dp"
+    android:layout_height="match_parent">
+
+    <Button
+        android:tag="button1"
+        android:id="@+id/type_study_pencil"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="笔"
+        android:textColor="#CC493F3F"
+        android:textSize="15dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+        android:layout_marginTop="10dp"
+        ></Button>
+
+    <Button
+        android:tag="button2"
+        android:id="@+id/type_study_highpencil"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#CC493F3F"
+        android:text="高档笔"
+        android:textSize="15dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+
+        ></Button>
+    <Button
+        android:id="@+id/type_study_paper"
+
+        android:tag="button3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#CC493F3F"
+        android:text="纸"
+        android:textSize="15dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+
+        ></Button>
+
+
+    <Button
+        android:tag="button4"
+        android:id="@+id/type_study_book"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#CC493F3F"
+        android:text="课本"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+
+        ></Button>
+
+    <Button
+        android:tag="button5"
+        android:id="@+id/type_study_test"
+        android:layout_width="100dp"
+        android:textColor="#CC493F3F"
+        android:layout_height="wrap_content"
+        android:text="等级考试"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+
+        ></Button>
+
+    <Button
+        android:tag="button6"
+        android:id="@+id/type_study_copy"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="学习笔记"
+        android:textSize="15dp"
+        android:textColor="#CC493F3F"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+
+        ></Button>
+
+    <Button
+        android:tag="button7"
+        android:id="@+id/type_study_info"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="学习资料"
+        android:textColor="#CC493F3F"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+
+        ></Button>
+
+    <Button
+        android:tag="button8"
+        android:id="@+id/type_study_other"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#CC493F3F"
+        android:text="其他"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/riple_btn_nocorner_2"
+
+        ></Button>
+</LinearLayout>

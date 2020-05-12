@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_left"
+    android:layout_width="270dp"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/myfrag_log"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/riple_btn_corner_3"
+            android:text="请先登录"
+            android:textColor="#212"
+            android:textSize="20dp"
+            android:visibility="invisible"></Button>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="19dp"
+            >
+        <ImageView
+            android:id="@+id/myfrag_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/unuser"
+            android:scaleType="center"
+            android:visibility="visible"></ImageView>
+
+        <TextView
+            android:id="@+id/frag_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:layout_marginTop="8dp"
+            android:textColor="#B3222222"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"></TextView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="#B3221122"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/myfrag_patch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#B3222222"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:id="@+id/myfrag_likeone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#B3222222"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:id="@+id/myfrag_likeme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#B3222222"
+            android:textSize="25dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="#B3222222"
+            android:textSize="17dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="#B3222222"
+            android:textSize="17dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="粉丝"
+            android:textColor="#B3222222"
+            android:textSize="17dp"></TextView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="0.1dp"
+        android:background="#212"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:background="#FAFAFA"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/kefu"></ImageView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:button="@null"
+            android:text="学生认证"
+            android:textColor="#212"
+            android:textSize="15dp"></RadioButton>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/jiantou"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:background="#FAFAFA"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/social"></ImageView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:button="@null"
+            android:text="我的商品"
+            android:textColor="#212"
+            android:textSize="15dp"></RadioButton>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/jiantou"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/xiaoxi"></ImageView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:button="@null"
+            android:text="我的消息"
+            android:textColor="#212"
+            android:textSize="15dp"></RadioButton>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/jiantou"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#FAFAFA"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/shouc"></ImageView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:button="@null"
+            android:text="我的收藏"
+            android:textColor="#212"
+            android:textSize="15dp"></RadioButton>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/jiantou"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myfrag_linear_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:background="#FAFAFA"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/tuichu"></ImageView>
+
+        <TextView
+            android:id="@+id/rd_out"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:button="@null"
+            android:text="退出登录"
+            android:textColor="#212"
+            android:textSize="15dp"></TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/jiantou"></ImageView>
+    </LinearLayout>
+</LinearLayout>

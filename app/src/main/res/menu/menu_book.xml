@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_book_xinxi" android:title="信息"></item>
+    <item android:id="@+id/menu_book_jinguan" android:title="经管"></item>
+    <item android:id="@+id/menu_book_jiaotong" android:title="交通"></item>
+    <item android:id="@+id/menu_book_tumu" android:title="土木"></item>
+    <item android:id="@+id/menu_book_dianqi" android:title="电气"></item>
+    <item android:id="@+id/menu_book_jixie" android:title="机械"></item>
+    <item android:id="@+id/menu_book_jianyi" android:title="建艺"></item>
+    <item android:id="@+id/menu_book_wenfa" android:title="文法"></item>
+    <item android:id="@+id/menu_book_shuli" android:title="数理"></item>
+    <item android:id="@+id/menu_book_waiyu" android:title="外语"></item>
+</menu>

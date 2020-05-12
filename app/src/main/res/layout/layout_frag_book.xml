@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/book_rg"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/book_book"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="专业课本"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textColor="#177777"
+                android:button="@null"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="考研资料"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="#177777"
+                android:button="@null"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="四六级资料"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#177777"
+                android:button="@null"></RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="其他各类考试资料"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="#177777"
+                android:button="@null"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/book_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

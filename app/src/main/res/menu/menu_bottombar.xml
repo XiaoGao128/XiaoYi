@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_mian"
+        android:icon="@drawable/mmian"
+        android:title="首页"></item>
+    <item
+        android:id="@+id/bottom_msg"
+        android:icon="@drawable/msg"
+        android:title="消息"></item>
+    <item
+        android:id="@+id/bottom_social"
+        android:icon="@drawable/social"
+        android:title="社区"></item>
+
+</menu>

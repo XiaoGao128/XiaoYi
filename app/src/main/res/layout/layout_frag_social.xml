@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ddebec"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/mian_et_search"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_selected"></EditText>
+        <Button
+            android:id="@+id/mian_btn_search"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/riple_btn_pink"
+            android:text="搜索"></Button>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/social_recy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/social_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="470dp"
+            android:layout_marginRight="30dp"
+            app:backgroundTint="#ADD0D3"
+            android:background="#ddebec"
+            android:src="@drawable/plus_no_wit" />
+    </FrameLayout>
+</LinearLayout>

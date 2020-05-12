@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AddActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:text="取消"
+            android:textColor="#797373"
+            android:textSize="16dp"></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="出售"
+            android:textColor="#212"
+            android:textSize="20dp"></TextView>
+
+        <Button
+            android:id="@+id/add_btn_out"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/riple_btn"
+            android:text="发布"
+            android:textColor="#444040"
+            android:textSize="16dp"></Button>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/add_et_describe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="9dp"
+        android:background="#30E7D2E7"
+        android:gravity="top"
+        android:hint="这里输入商品的描述"
+        android:lines="8"
+        android:padding="19dp"
+        android:singleLine="false"></EditText>
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/add_scro_img"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus_fang"></ImageView>
+        <ImageView
+            android:id="@+id/add_img_2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus_fang"></ImageView>
+        <ImageView
+            android:id="@+id/add_img_3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus_fang"></ImageView>
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/add_recy_img"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--        ></androidx.recyclerview.widget.RecyclerView>-->
+    </LinearLayout>
+   <ProgressBar
+       android:id="@+id/add_progers"
+       android:layout_marginTop="70dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="70dp"
+       android:layout_height="70dp"></ProgressBar>
+   </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="14dp"
+        android:text="ps:暂只支持上传三张以内照片"
+        android:gravity="center"></TextView>
+    <EditText
+        android:id="@+id/add_et_money"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#05C0A1A1"
+        android:hint="价格"
+        android:paddingLeft="19dp"
+        android:singleLine="true"></EditText>
+    <EditText
+        android:id="@+id/add_et_posi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#05C0A1A1"
+        android:hint="宿舍地址（可不填）"
+        android:paddingLeft="19dp"
+        android:singleLine="true"></EditText>
+
+    <EditText
+        android:id="@+id/add_et_tag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#05C0A1A1"
+        android:hint="标签（可不填）"
+        android:paddingLeft="19dp"
+        android:singleLine="true"></EditText>
+
+    <LinearLayout
+        android:id="@+id/add_et_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#05C0A1A1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/add_btn_addtype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/riple_btn"
+            android:onClick="addType"
+            android:text="添加分类"
+            android:textColor="#706262"></Button>
+        <TextView
+            android:id="@+id/add_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:text="分类"
+            android:textSize="15dp"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+</LinearLayout>
